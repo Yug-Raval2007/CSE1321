@@ -1,0 +1,52 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 6A
+
+while True:
+    print("Multiplication and Exponent Calculator\nChoose option 1",end=" ")
+    print("for Multiplication\nChoose option 2 for Exponentiation")
+    print("Choose option 3 to Exit")
+    calc=int(input())
+    match calc:
+        case 1:
+            result=0
+            operand_1=int(input("\nEnter an operand: "))
+            operand_2=int(input("Enter the other operand: "))
+            for i in range(operand_2):
+                result+=operand_1
+            print(f"{operand_1} x {operand_2} = {result}")
+        case 2:
+            result=1
+            base=int(input("\nEnter the base: "))
+            exponent=int(input("Enter the exponent: "))
+            for i in range(exponent):
+                #Repeats as many times as the exponent is
+                temporary_sum=0
+                #Sets the sum of the numbers as 0 at first
+                for o in range(base):
+                    #As many times as the base is
+                    temporary_sum+=result
+                    #Adds the result to the temporary sum, which is 0 at first
+                result=temporary_sum
+                #Sets the result to the new temporary number
+                """The temporary number is 0 at first. It's added by 1
+                    as many times as the base is at first, so the temp.
+                    sum at the end of the loop is the base. Then, the 
+                    base(result) becomes the thing which is being added 
+                    to the temp. sum of 0 again. Then it adds up by the base,
+                    becomes the new result, repeat. So if the base was 4
+                    and the exponent 3, 1 would be added by 0 four times,
+                    resulting in 4. 4 becomes the new addition. Next time,
+                    4 is added by 0 four times, making the result 16 now,
+                    and 16 is added by 0 four times, making the result 64
+                """
+            print(f"{base}^({exponent}) = {result}")
+        case 3:
+            print("\nClosing the Calculator...")
+            break
+        case __:
+            print("\nInvalid Choice")
+    print()
