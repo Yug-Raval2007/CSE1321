@@ -1,0 +1,37 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 4A
+
+grade=float(input("Enter your grade: "))    #asks user for their grade and converts the val. to a float val.
+
+if 97<grade<=100:                           #if grade is within any of these ranges, the letter grade will change letters
+    letter_grade="A+"
+elif 94<grade<=97:
+    letter_grade="A"
+elif 91<grade<=94:
+    letter_grade="A-"
+elif 88<grade<=91:
+    letter_grade="B+"
+elif 85<grade<=88:
+    letter_grade="B"
+elif 82<grade<=85:
+    letter_grade="B-"
+elif 79<grade<=82:
+    letter_grade="C+"
+elif 76<grade<=79:
+    letter_grade="C"
+elif 73<grade<=76:
+    letter_grade="C-"
+elif 70<grade<=73:
+    letter_grade="D+"
+elif 67<grade<=70:
+    letter_grade="D"
+elif 64<grade<67:
+    letter_grade="D-"
+else:
+    letter_grade="F"
+
+print(f"Letter grade is: {letter_grade}")   #prints the letter grade based on the numerical grade they put in
