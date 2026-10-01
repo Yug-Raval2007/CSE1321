@@ -1,0 +1,16 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Assignment: 1C
+
+sample_rate=int(input("Enter Sample Rate (in Hz): "))
+buffer_size=int(input("Enter Buffer Size: "))
+track_length=int(input("Enter track length (in seconds): "))
+
+sample_data=sample_rate*track_length
+full_buffer=sample_data//buffer_size
+remaining_buffer=sample_data%buffer_size
+
+print(f"Processed {full_buffer} full buffers with {remaining_buffer} leftover samples.")
