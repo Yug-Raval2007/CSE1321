@@ -1,0 +1,53 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Assignment: 2B
+
+print("[Owl Airlines - Checked Bag Kiosk]")
+
+count=0
+preferred_fee = 35
+first_fee=preferred_fee
+second_fee=50
+third_fee=150
+
+while count==0:
+    member_status=input("Are you a Hooty Hoo Preferred Member? (Y/N): ")
+    if member_status=="Y":
+        print("Welcome, and thank you for being a Hooty Hoo",end=" ")
+        print("Preferred Member\nAs a perk for being awesome,",end=" ")
+        print("your first 2 checked bags are free\nAdditional",end=" ")
+        print("bags are $35.00 each")
+    if member_status=="N":
+        print("Checked Bag rates:")
+        print("- First Checked bag: $35.00\n- Second Checked Bag: $50.00")
+        print("- Third+ Checked bag: $150.00 each")
+    baggage_status = input("\nAre you checking any bags? (Y/N): ")
+    if baggage_status=="Y":
+        bags=int(input("How many bags are you checking in?: "))
+        if member_status=="Y":
+            print("\nAs a Hooty Hoo Preferred Member your first 2",end=" ")
+            print("bags are complimentary.")
+            if bags>2:
+                baggage_fee = (bags - 2) * preferred_fee
+                print(f"Checked Bag fees to pay: ${baggage_fee:.2f}")
+            print("\nHave a safe flight and thank you for", end=" ")
+            print("being a Hooty Hoo Preferred Member")
+        if member_status=="N":
+            if bags==1:
+                baggage_fee=first_fee
+                print(f"\nChecked Bag fees to pay: ${baggage_fee:.2f}")
+            if bags==2:
+                baggage_fee=first_fee+second_fee
+                print(f"\nChecked Bag fees to pay: ${baggage_fee:.2f}")
+            if bags>=3:
+                baggage_fee=first_fee+second_fee+(bags-2)*third_fee
+                print(f"\nChecked Bag fees to pay: ${baggage_fee:.2f}")
+                print()
+    if baggage_status=="N" and member_status=="Y":
+        print("Have a safe flight and thank you for being", end=" ")
+        print("a Hooty Hoo Preferred Member")
+    print()
+
