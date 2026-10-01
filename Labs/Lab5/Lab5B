@@ -1,0 +1,66 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 5B
+
+size=int(input("Please enter a value for the size: "))
+print(f"This is the requested {size}x{size} box:")
+for height in range(size):      # For the amount of iterations/numbers from 0 to the (user input -1),... That range becomes the height of the box
+    for length in range(size):  # Then, checks for the same thing, but stores it as the length of the box, which then...
+        print("*",end="")       # Prints * and then allows another string to print next to it in the same line. Loops as many times as the length  of the box.
+    print()                     # Prints a new line after the * has printed as many times as the length of the box.
+"""
+    Prints * as many "lengths" there is in {size} right next to each other
+    before printing a new line and doing the same thing as many "heights"
+    there is in {size}
+"""
+
+print(f"This is the requested right-facing {size}x{size} right-triangle: ")
+width=0
+for height in range(size):
+    width+=1
+    for iteration in range(width):
+        print("*",end="")
+    print()
+
+"""
+    Each "height" found in {size} will increase the original width val. of
+    0 by 1. Then every for every iteration within the width val., a * prints
+    while allowing room for the next. When width is only 1, aka, the beginning
+    , it'll print * once, then print a new line. This is repeated the second
+    time if the side length is more than 1. Therefore, width is increased from
+    1 to 2 now, and * will be printed twice in the same row, since the range
+    of width has increased, therefore increasing the loop time. However, this
+    loop will only last as long as the width will increase, which will only
+    increase as many times as there is the side length in the given input.  
+"""
+
+print(f"This is the requested left-facing {size}x{size} right-triangle:")
+for height in range(1,size+1):
+    """ Height is a value that starts at 1 and then increases to the actual 
+        size, not the size -1
+    """
+    stars=height
+    # The height can also be considered the stars printed in each line
+    for width_space in range(size-height):
+        """ The height increases from 1 every loop, so at first, the range
+            is from 0 to the size-1, cuz the height is 1 at first. So if
+            you put in 4 as the size, the range is 3 because 4-1=3. Therefore
+            the action is done 3 times at first
+        """
+        print(" ", end="")
+        """ Prints a space and allows for another space to be typed for as 
+            many times as the width space is at first, which is 3 times
+            in the example
+        """
+    for width_star in range(stars):
+        """ The star val. starts at 1 at first, so the width of stars is 1
+            star at first, cuz 0 to 1 is 1.
+        """
+        print("*", end="")
+        """ Prints a * and then allows space for another star to come, so
+            the first time will be 1 star, cuz the stars=height is 1 at
+            first"""
+    print() # Prints a new line after the space and star combo is printed
