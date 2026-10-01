@@ -1,0 +1,25 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 6C
+
+num=int(input("Enter Number for Rows or 0 to quit: "))
+
+while num!=0:
+    space = 0
+    fill = 0
+    for i in range(num):
+        space+=1
+        fill += 1
+        for j in range(num-space):
+            print(" ",end="")
+        for k in range(fill,1,-1):
+            print(k,end="")
+        for l in range(1,fill+1):
+            print(l,end="")
+        for m in range(num-space):
+            print(" ",end="")
+        print()
+    num = int(input("Enter Number for Rows or 0 to quit: "))
