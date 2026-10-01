@@ -1,0 +1,13 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 3A
+
+amount_owed=float(input("Amount owed: $")) #Asks user for current balance on card, converts it into a float, and stores it in the var.
+apr=float(input("APR: ")) #Asks user for APR, converts it into a float, and stores it in the var.
+monthly_percentage_rate=apr/12 #calculates the MPR by dividing the APR by 12 months, and rounding the answer to 3 decimal places
+minimum_payment=(monthly_percentage_rate/100)*amount_owed #calculates the minimum payment by first converting the MPR to a decimal val. by dividing it by 100, then multiplying that val. by the current balance, then rounding the answer to 2 decimal places
+print(f"Monthly percentage rate: {monthly_percentage_rate:.3f}") #prints the MPR w/ it's title
+print(f"Minimum payment: ${minimum_payment:.2f}") #prints the minimum payment and titles it.
