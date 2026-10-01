@@ -1,0 +1,23 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 3C
+
+small_sandwich=int(input("Enter the number of small sandwiches: "))
+medium_sandwhich=int(input("Enter the number of medium sandwiches: "))
+large_sandwhich=int(input("Enter the number of large sandwiches: "))
+extra_large_sandwhich=int(input("Enter the number of extra-large sandwiches: "))
+print(f"\nYou've entered {small_sandwich} small sandwiches.")
+print(f"You've entered {medium_sandwhich} medium sandwiches.")
+print(f"You've entered {large_sandwhich} large sandwiches.")
+print(f"You've entered {extra_large_sandwhich} extra-large sandwiches.")
+small_sandwhich_total_seconds= small_sandwich * 30
+medium_sandwhich_total_seconds=medium_sandwhich*60
+large_sandwhich_total_seconds=large_sandwhich*75
+extra_large_sandwhich_total_seconds=extra_large_sandwhich*135
+total_cooking_seconds=small_sandwhich_total_seconds+medium_sandwhich_total_seconds+large_sandwhich_total_seconds+extra_large_sandwhich_total_seconds
+total_cooking_minutes=total_cooking_seconds//60
+total_cooking_remaining_seconds=total_cooking_seconds%60
+print(f"\nTotal cooking time is {total_cooking_minutes} minutes and {total_cooking_remaining_seconds} seconds.")
