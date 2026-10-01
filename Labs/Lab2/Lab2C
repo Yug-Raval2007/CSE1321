@@ -1,0 +1,13 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 2C
+
+width=int(input("Enter a width: ")) #stores width as an integer after asking the user for the width
+height=int(input("Enter a height: ")) #asks user for height and stores as integer
+area=width*height #stores area as width multiplied by height, values given by the user
+perimeter=2*(width+height) #stores perimeter as 2 times the sum of width and height
+print(f"The area is {area}") #prints the area in a sentence
+print(f"The perimeter is {perimeter}") #prints the perimeter in a sentence
