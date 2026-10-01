@@ -1,0 +1,14 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 2A
+
+name1=input("Enter a name: ") #asks the user to enter a name and stores it into name1
+name2=input("Enter another name: ") #asks user to enter another name and stores it into another variable
+verb=input("Enter a verb: ") #asks user to enter a verb and stores it
+adverb=input("Enter an adverb: ") #asks user to enter an adverb and stores it
+print(f"Once upon a time, there was a person named {name1}",end=" ") #prints madlib while including the string values entered by the user
+print(f"who had a child named\n{name2}. This child would {verb}",end=" ") #prints madlib continued
+print(f"{adverb} while singing to strangers.") #prints madlib continued
