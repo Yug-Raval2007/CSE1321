@@ -1,0 +1,25 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 3B
+
+course_1_hours=int(input("Course 1 hours: "))
+course_1_grade=int(input("Grade for course 1: "))
+course_1_quality_points=course_1_grade*course_1_hours
+course_2_hours=int(input("Course 2 hours: "))
+course_2_grade=int(input("Grade for course 2: "))
+course_2_quality_points=course_2_grade*course_2_hours
+course_3_hours=int(input("Course 3 hours: "))
+course_3_grade=int(input("Grade for course 3: "))
+course_3_quality_points=course_3_grade*course_3_hours
+course_4_hours=int(input("Course 4 hours: "))
+course_4_grade=int(input("Grade for course 4: "))
+course_4_quality_points=course_4_grade*course_4_hours
+total_hours=course_1_hours+course_2_hours+course_3_hours+course_4_hours
+total_quality_points=course_1_quality_points+course_2_quality_points+course_3_quality_points+course_4_quality_points
+gpa=round(total_quality_points/total_hours,2)
+print(f"Total hours: {total_hours}")
+print(f"Total quality points: {total_quality_points}")
+print(f"Your GPA for this semester is {gpa}")
