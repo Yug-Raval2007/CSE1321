@@ -1,0 +1,29 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Assignment: 1A
+
+servings=int(input("How many servings of Owl-A-Ronis?: "))
+cheese_type=input("What type of cheese?: ")
+
+print("\nGenerating recipe...")
+
+owl_a_roni=0.5*servings
+water=0.5*servings
+salt=servings
+cheese=0.25*servings
+milk=servings
+
+print("\nRecipe:")
+print("1. In a pot add:")
+print(f"        - {owl_a_roni} cup of Owl-a-Ronis")
+print(f"        - {water} cup of water")
+print(f"        - {salt} pinch of salt")
+print("2. Boil the pasta in water for about 6 to 8 minutes")
+print("3. Drain excess water")
+print(f"4. Shred {cheese} cup of {cheese_type} cheese")
+print(f"5. Pour {milk} splash of Milk into the pot")
+print(f"6. Add the shredded {cheese_type} cheese into the pot")
+print("7. Stir well until creamy")
