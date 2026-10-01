@@ -1,0 +1,11 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Lab: 5C
+
+please=input("If you would like to stop this program, say \"please\": ")
+while please != "please":
+    please=input("If you would like to stop this program, say \"please\": ")
+print("Program complete")
