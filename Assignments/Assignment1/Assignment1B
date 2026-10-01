@@ -1,0 +1,13 @@
+# Class: CSE 1321L
+# Section: BW3
+# Term: Fall 2026
+# Instructor: Akash Bharati
+# Name: Yug Raval
+# Assignment: 1B
+
+fahrenheit=float(input("Enter temperature (F): "))
+
+celsius=(fahrenheit-32)*(5/9)
+sound_speed=331+(0.6*celsius)
+
+print(f"Sound travels at: {sound_speed} ms")
